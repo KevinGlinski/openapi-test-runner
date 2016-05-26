@@ -1,5 +1,40 @@
 ---
 -
+ operationId: getAuthorizationPermissions
+ response:
+  status: 200
+-
+ operationId: getAuthorizationProducts
+ response:
+  status: 200
+-
+ operationId: getAuthorizationRoles
+ response:
+  status: 200
+  variables:
+   role0: entities[0].id
+   role1: entities[1].id
+-
+ operationId: getAuthorizationRolesRoleId
+ params:
+  roleId: $role0
+ response:
+  status: 200
+-
+ operationId: getUsers
+ params:
+  pageSize: 1
+ response:
+  status: 200
+  variables:
+   userId: entities[1].id
+-
+ operationId: getUsersUserIdRoles
+ params:
+  userId: $userId
+ response:
+  status: 200
+-
  operationId: postAuthorizationRoles
  params:
   name: TEST AUTH ROLE

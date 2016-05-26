@@ -90,8 +90,8 @@ def make_request(url, httpMethod, body)
 
 end
 
-testSuite = ["authorization.yml"]
-#testSuite = ["oauth_clients.yml", "presence.yml"]
+#testSuite = ["authorization.yml"]
+testSuite = ["oauth_clients.yml", "presence.yml", "authorization.yml"]
 
 testSuite.each do |testrun|
 
