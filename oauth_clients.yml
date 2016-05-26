@@ -1,0 +1,42 @@
+---
+-
+ operationId: postOauthClients
+ params:
+  authorizedGrantType: INVALID
+ response:
+  status: 400
+-
+ operationId: getOauthClientsClientId
+ params:
+  clientId: "FAKECLIENTID"
+ response:
+  status: 404
+-
+ operationId: postOauthClients
+ params:
+  authorizedGrantType: CODE
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: getOauthClientsClientId
+ params:
+  clientId: $id
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: putOauthClientsClientId
+ params:
+  clientId: $id
+  authorizedGrantType: CODE
+ response:
+  status: 200
+-
+ operationId: deleteOauthClientsClientId
+ params:
+  clientId: $id
+ response:
+  status: 200

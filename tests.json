@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "params": {
+        "email": "hello@slkj.com"
+      },
+      "response": {
+        "status": 200,
+        "variables": {
+          "id": "id"
+        }
+      },
+      "operationId": "postUsers"
+    },
+    {
+      "params": {
+        "userId": "$id"
+      },
+      "response": {
+        "status": 200,
+        "variables": {
+          "id": "id"
+        }
+      },
+      "operationId": "getUsersUserId"
+    }
+  ]
+]

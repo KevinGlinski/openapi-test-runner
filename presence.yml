@@ -1,0 +1,32 @@
+---
+-
+ operationId: postPresencedefinitions
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: getPresencedefinitions
+ params:
+
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: getUsers
+ params:
+  pageSize: 1
+ response:
+  status: 200
+  variables:
+   userId: entities[1].id
+-
+ operationId: getUsersUserIdPresencesSourceId
+ params:
+  sourceId: PURECLOUD
+  userId: $userId
+ response:
+  status: 200
+  variables:
+   userId: presenceDefinition.id

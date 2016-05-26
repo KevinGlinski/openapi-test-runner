@@ -1,0 +1,29 @@
+---
+-
+ operationId: postUsers
+ params:
+
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: getUsersUserId
+ params:
+  userId: $id
+ response:
+  status: 200
+  variables:
+   id: id
+-
+ operationId: patchUsersUserId
+ params:
+  clientId: $id
+ response:
+  status: 200
+-
+ operationId: deleteUsersUserId
+ params:
+  clientId: $id
+ response:
+  status: 200

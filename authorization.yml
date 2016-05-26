@@ -1,0 +1,9 @@
+---
+-
+ operationId: postAuthorizationRoles
+ params:
+  name: TEST AUTH ROLE
+ response:
+  status: 200
+  variables:
+   id: id
